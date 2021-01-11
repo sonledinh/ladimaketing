@@ -359,6 +359,15 @@ footer {
   align-items: center;
   justify-content: center;
   position: relative; }
+  .box-banner .anim-effect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
 
 .build-tag h3 {
   font-size: 32px;
@@ -367,7 +376,7 @@ footer {
   padding: 20px 0; }
 
 .text-loop {
-  height: 145px;
+  min-height: 250px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -385,7 +394,7 @@ footer {
     justify-content: center;
     align-items: center;
     position: relative;
-    top: -5px; }
+    top: -2px; }
 
 .link-banner {
   writing-mode: tb;
@@ -406,7 +415,8 @@ footer {
     transform: rotate(180deg); }
 
 .info-banner {
-  position: relative; }
+  position: relative;
+  z-index: 2; }
 
 .btn-scroll {
   position: fixed;
@@ -421,5 +431,12 @@ footer {
 
 .slide-svg svg {
   width: 240px; }
+
+.content-build {
+  position: relative; }
+  .content-build .anim-effect {
+    position: absolute;
+    left: 0;
+    bottom: 0; }
 
 /*# sourceMappingURL=style.css.map */

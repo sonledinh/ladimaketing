@@ -25,16 +25,16 @@ $('.slide-text-loop').slick({
 }); 
 
 
-$('.slide-svg').slick({
-    autoplay: true,
-    autoplaySpeed: 1500,
-    arrow: false,
-    dots: false,
-    fade: true, 
-    slidesToShow: 1,
-    prevArrow: '',
-    nextArrow: '',
-}); 
+// $('.slide-svg').slick({
+//     autoplay: true,
+//     autoplaySpeed: 1500,
+//     arrow: false,
+//     dots: false,
+//     fade: true, 
+//     slidesToShow: 1,
+//     prevArrow: '',
+//     nextArrow: '',
+// }); 
 
 
 $('.btn-scroll a').click(function(e){

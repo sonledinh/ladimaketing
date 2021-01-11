@@ -224,6 +224,16 @@ body{
     align-items: center;
     justify-content: center;
     position: relative;
+    .anim-effect {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 .build-tag {
     h3 {
@@ -234,7 +244,7 @@ body{
     }
 }
 .text-loop {
-    height: 145px;
+    min-height: 250px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -252,7 +262,7 @@ body{
         justify-content: center;
         align-items: center;
         position: relative;
-        top: -5px;
+        top: -2px;
     }
 }
 .link-banner {
@@ -278,6 +288,7 @@ body{
 }
 .info-banner {
     position: relative;
+    z-index: 2;
 }
 .btn-scroll {
     position: fixed;
@@ -294,5 +305,13 @@ body{
 .slide-svg {
     svg {
         width: 240px;
+    }
+}
+.content-build {
+    position: relative;
+    .anim-effect {
+        position: absolute;
+        left: 0;
+        bottom: 0;
     }
 }
