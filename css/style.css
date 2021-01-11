@@ -408,4 +408,18 @@ footer {
 .info-banner {
   position: relative; }
 
+.btn-scroll {
+  position: fixed;
+  bottom: 30px;
+  left: 0;
+  width: 100%;
+  transition: .4s all;
+  z-index: 2; }
+  .btn-scroll.scroll {
+    transition: .4s all;
+    bottom: -70px; }
+
+.slide-svg svg {
+  width: 240px; }
+
 /*# sourceMappingURL=style.css.map */

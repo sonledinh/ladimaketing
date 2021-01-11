@@ -20,10 +20,10 @@
         <div class="header-menu">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-md-6">
+                    <div class="col-md-6 col-6">
                         <div class="logo"><a href=""><img src="images/logo.png" class="img-fluid" alt=""></a></div>
                     </div>
-                    <div class="col-md-6 text-right"><div class="link-branding"><a href="" class="" target="_blank">Get started!&nbsp;&nbsp;&nbsp;↗</a></div></div>
+                    <div class="col-md-6 col-6 text-right"><div class="link-branding"><a href="" class="" target="_blank">Get started!&nbsp;&nbsp;&nbsp;↗</a></div></div>
                 </div>
             </div>
         </div>

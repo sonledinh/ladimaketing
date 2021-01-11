@@ -21,7 +21,7 @@ body{
     }  
 	.container{
 		max-width: 1400px;
-		padding: 0 40px;
+		padding: 0 40px; 
 	}
 	input {
 		padding: 0 15px; 
@@ -278,4 +278,21 @@ body{
 }
 .info-banner {
     position: relative;
+}
+.btn-scroll {
+    position: fixed;
+    bottom: 30px;
+    left: 0; 
+    width: 100%;
+    transition: .4s all;
+    z-index: 2;
+    &.scroll {
+        transition: .4s all;
+        bottom: -70px;
+    }
+}
+.slide-svg {
+    svg {
+        width: 240px;
+    }
 }
