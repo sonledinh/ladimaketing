@@ -129,7 +129,7 @@ body {
     outline: none !important; }
   body .container {
     max-width: 1400px;
-    padding: 0 40px; }
+    padding: 0 56px; }
   body input {
     padding: 0 15px;
     outline: none;
@@ -157,7 +157,9 @@ body {
       font-weight: 500; }
 
 footer {
-  margin-top: 100px; }
+  margin-top: 100px;
+  position: relative;
+  z-index: 3; }
 
 .item-footer h3 {
   font-size: 21px;
@@ -286,15 +288,25 @@ footer {
   margin-top: 80px; }
 
 .box-started {
-  padding: 100px 0 0 0; }
+  padding: 100px 0 0 0;
+  margin: 80px 0 -320px 0; }
 
 .box-polkadot {
-  padding: 180px 0; }
+  padding: 180px 0;
+  background: linear-gradient(180deg, #000, #111, #111, #111);
+  position: relative; }
+  .box-polkadot .container {
+    position: relative; }
   .box-polkadot .desc-title {
     max-width: 560px; }
+  .box-polkadot .anim-effect {
+    position: absolute;
+    bottom: -240px;
+    right: 40px; }
 
 .box-future {
-  padding-bottom: 200px; }
+  padding-bottom: 200px;
+  padding-top: 100px; }
 
 .box-system {
   padding: 140px 0 200px 0; }
@@ -339,7 +351,48 @@ footer {
     display: flex;
     flex-wrap: wrap; }
     .list-part ul li {
-      padding: 0 20px; }
+      padding: 0 20px;
+      visibility: visible;
+      -webkit-animation-fill-mode: both;
+      -moz-animation-fill-mode: both;
+      -ms-animation-fill-mode: both;
+      -o-animation-fill-mode: both;
+      animation-fill-mode: both;
+      -webkit-animation-duration: 0.25s;
+      -moz-animation-duration: 0.25s;
+      -ms-animation-duration: 0.25s;
+      -o-animation-duration: 0.25s;
+      animation-duration: 0.25s;
+      -webkit-animation-play-state: running;
+      -moz-animation-play-state: running;
+      -ms-animation-play-state: running;
+      -o-animation-play-state: running;
+      animation-play-state: running;
+      opacity: 0; }
+      .list-part ul li.active {
+        -webkit-animation-name: fadeInUp;
+        -moz-animation-name: fadeInUp;
+        -o-animation-name: fadeInUp;
+        animation-name: fadeInUp;
+        opacity: 1; }
+      .list-part ul li:nth-child(2) {
+        -webkit-animation-duration: 0.75s;
+        -moz-animation-duration: 0.75s;
+        -ms-animation-duration: 0.75s;
+        -o-animation-duration: 0.75s;
+        animation-duration: 0.75s; }
+      .list-part ul li:nth-child(3) {
+        -webkit-animation-duration: 1.25s;
+        -moz-animation-duration: 1.25s;
+        -ms-animation-duration: 1.25s;
+        -o-animation-duration: 1.25s;
+        animation-duration: 1.25s; }
+      .list-part ul li:nth-child(4) {
+        -webkit-animation-duration: 1.75s;
+        -moz-animation-duration: 1.75s;
+        -ms-animation-duration: 1.75s;
+        -o-animation-duration: 1.75s;
+        animation-duration: 1.75s; }
   .list-part .item a {
     display: flex;
     width: 80px;
@@ -373,7 +426,8 @@ footer {
   font-size: 32px;
   font-weight: bold;
   color: #fff;
-  padding: 20px 0; }
+  padding: 20px 0;
+  position: relative; }
 
 .text-loop {
   min-height: 250px;
@@ -437,6 +491,37 @@ footer {
   .content-build .anim-effect {
     position: absolute;
     left: 0;
-    bottom: 0; }
+    bottom: -220px; }
+
+main {
+  position: relative; }
+  main:after {
+    content: "";
+    width: 100%;
+    height: 35vh;
+    background-image: linear-gradient(#111111, #111111b8, #11111100);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    pointer-events: none; }
+  main:before {
+    content: "";
+    width: 100%;
+    height: 35vh;
+    background-image: linear-gradient(#11111100, #111111b8, #111111b0);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    pointer-events: none; }
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0px); } }
 
 /*# sourceMappingURL=style.css.map */

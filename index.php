@@ -1,11 +1,14 @@
 <?php include 'header.php';?>
 <main>
+
+
+
 	<section class="box-banner">
 		<div class="container">
 			<div class="info-banner">
 				<div class="link-banner link-git"><a href="" target="_blank">github</a></div>
 				<div class="build-tag text-center">
-					<h3>build your</h3>
+					<h3 class="build-1">build your</h3>
 					<div class="text-loop text-center">
 						<div class="slide-text-loop">
 							<div class="item"><h2>privacy</h2></div>
@@ -16,7 +19,7 @@
 							<div class="item"><h2>governance</h2></div>
 						</div>
 					</div>
-					<h3>blockchain</h3>
+					<h3 class="build-2">blockchain</h3>
 				</div>
 				<div class="link-banner link-twit"><a href="" target="_blank">twitter</a></div> 
 			</div>
@@ -125,6 +128,7 @@
 				</div>
 				<div class="link-more"><a href="" target="_blank">Learm More <img src="images/link.png" class="img-fluid" alt=""></a></div>
 			</div>
+			<div class="anim-effect text-center"><img src="images/anim.gif" class="img-fluid" alt=""></div>
 		</div>
 	</section>
 	<section class="box-future">
